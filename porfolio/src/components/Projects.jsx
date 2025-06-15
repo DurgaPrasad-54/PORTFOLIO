@@ -4,7 +4,7 @@ const Projects = () => {
   const projectData = [
     {
       title: 'NOTE APP',
-      image: './public/NOTEAPP.png',
+      image: '/NOTEAPP.png',
       description:
         'A full-stack application that allows users to register, log in, and manage personal notes securely. Built with authentication and CRUD functionalities.',
       tech: 'Node.js, Express.js, MongoDB, React.js',
@@ -12,7 +12,7 @@ const Projects = () => {
     },
     {
       title: 'Air Quality Prediction',
-      image: './public/AQI.png',
+      image: '/AQI.png',
       description:
         'A Flask-based machine learning web app that predicts Air Quality Index (AQI) using real-time environmental data.',
       tech: 'Python, Flask, Scikit-learn, HTML, CSS, JS',

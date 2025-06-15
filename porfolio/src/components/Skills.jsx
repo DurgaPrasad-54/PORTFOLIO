@@ -19,7 +19,7 @@ const Skills = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2>Skills</h2>
+      <h2 id="myskills">Skills</h2>
       <div className="skills-grid">
         {Object.entries(skillCategories).map(([category, skills]) => (
           <div key={category} className="skill-card">

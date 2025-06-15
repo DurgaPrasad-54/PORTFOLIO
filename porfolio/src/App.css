@@ -1,0 +1,357 @@
+/* ===========================
+   RESET AND BASE STYLES
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #000000, #0a1f44);
+  color: #a8c0ff;
+  padding-bottom: 3rem;
+  transition: background 0.3s ease-in-out;
+}
+
+a {
+  color: #4ea1ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1a68d1;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.Header {
+  background: #020308;
+  color: #a8c0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(30, 56, 138, 0.6);
+}
+
+.Header:hover {
+  background: #051030;
+}
+
+.Header .left h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4ea1ff;
+}
+
+.Header .right {
+  display: flex;
+  gap: 2rem;
+}
+
+.Header .right a h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a8c0ff;
+}
+
+.Header .right a:hover h1 {
+  color: #76a9ff;
+}
+
+/* Menu button (hamburger) hidden by default */
+.menu-button {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #a8c0ff;
+  cursor: pointer;
+}
+
+/* ===========================
+   SECTION CONTAINER
+=========================== */
+.section {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #4ea1ff;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ===========================
+   HOME SECTION
+=========================== */
+.home p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #b0c7ff;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===========================
+   DOWNLOAD BUTTON
+=========================== */
+.btn-download {
+  display: block;
+  background: #1a68d1;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  cursor: pointer;
+  width: 30%;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-download:hover {
+  background: #2a7ddc;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #4395f4cc;
+}
+
+/* === Removed Education section styles completely === */
+
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+#projects {
+  margin: 0 auto 3rem auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+#projects h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #4ea1ff;
+}
+
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #0f183f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(30, 56, 138, 0.6);
+  border-left: 4px solid #4ea1ff;
+  color: #c2d1ff;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.7);
+  border-left-color: #1a68d1;
+}
+
+.project-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.project-card h3 {
+  color: #4ea1ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #a8c0ff;
+  flex-grow: 1;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+.contact {
+  text-align: center;
+  color: #b0c7ff;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1.5rem;
+}
+
+.skill-card {
+  background: #0f183f;
+  border-left: 4px solid #4ea1ff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(30, 56, 138, 0.5);
+  transition: transform 0.3s ease;
+  color: #a8c0ff;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.7);
+}
+
+.skill-card h3 {
+  color: #4ea1ff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   ICON STYLES
+=========================== */
+.icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #4ea1ff;
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   RESPONSIVE STYLES
+=========================== */
+@media (max-width: 768px) {
+  .Header .right {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    background: #0a122f;
+    width: auto;
+    max-width: 220px;
+    display: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(30, 56, 138, 0.8);
+    z-index: 999;
+  }
+
+  .Header .right.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Header .right a {
+    margin: 0.5rem 0;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .section h2,
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .btn-download {
+    width: fit-content;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .Header .left h1 {
+    font-size: 1.4rem;
+  }
+
+  .section h2,
+  #projects h2 {
+    font-size: 1.6rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1rem;
+  }
+
+  .skill-card li {
+    font-size: 0.85rem;
+  }
+}

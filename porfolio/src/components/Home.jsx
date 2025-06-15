@@ -18,7 +18,7 @@ const Home = () => {
       <p>
         Explore my projects, skills, and experiences. Let’s build something great together!
       </p>
-      <a href="/prasad.pdf" download className="btn-download">
+      <a href="/Prasad_resume.pdf" download className="btn-download">
         Download Resume
       </a>
     </motion.section>

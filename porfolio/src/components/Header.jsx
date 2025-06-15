@@ -56,11 +56,11 @@ const Header = () => {
         ref={menuRef}
         className={`right ${menuOpen ? 'open' : ''}`}
       >
-        <a href="#home" onClick={() => setMenuOpen(false)}><h1>Home</h1></a>
-        <a href="#about" onClick={() => setMenuOpen(false)}><h1>About</h1></a>
-        <a href="#skills" onClick={() => setMenuOpen(false)}><h1>Skills</h1></a>
-        <a href="#projects" onClick={() => setMenuOpen(false)}><h1>Projects</h1></a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}><h1>Contact</h1></a>
+        <a href="#homep" onClick={() => setMenuOpen(false)}><h1>Home</h1></a>
+        <a href="#aboutme" onClick={() => setMenuOpen(false)}><h1>About</h1></a>
+        <a href="#myskills" onClick={() => setMenuOpen(false)}><h1>Skills</h1></a>
+        <a href="#project" onClick={() => setMenuOpen(false)}><h1>Projects</h1></a>
+        <a href="#contactus" onClick={() => setMenuOpen(false)}><h1>Contact</h1></a>
       </section>
     </div>
   );

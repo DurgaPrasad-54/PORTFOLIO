@@ -29,7 +29,7 @@ const Projects = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2>Projects</h2>
+      <h2 id="project">Projects</h2>
       <div className="projects-row">
         {projectData.map((project, index) => (
           <div key={index} className="project-card">

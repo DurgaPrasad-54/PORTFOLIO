@@ -10,7 +10,7 @@ const Home = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2>Welcome to My Portfolio</h2>
+      <h2 id="homep">Welcome to My Portfolio</h2>
       <p>
         I’m Koppireddy Durga Prasad, a dedicated developer with expertise in the MERN stack and Machine Learning.
         I enjoy building efficient, intelligent, and user-centric web applications.

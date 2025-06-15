@@ -10,7 +10,7 @@ const About = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2>About Me</h2>
+      <h2 id="aboutme">About Me</h2>
       <p>
         I am Koppireddy Durga Prasad, a passionate full-stack developer and B.Tech student specializing in Artificial Intelligence and Data Science. With hands-on experience in Python, Machine Learning, and the MERN stack, I build intelligent and efficient web applications.
       </p>

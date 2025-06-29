@@ -11,6 +11,13 @@ const Projects = () => {
       link: 'https://noteapp-five-plum.vercel.app/',
     },
     {
+      title:'FinTrack',
+      image:'',
+      description:'',
+      tech:'',
+      link:''
+    },
+    {
       title: 'Air Quality Prediction',
       image: '/AQI.png',
       description:

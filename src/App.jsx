@@ -258,7 +258,7 @@ const Portfolio = () => {
                 animate={{ opacity: 1, x: 0 }}
                 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
               >
-                DP.dev
+                Durga Prasad
               </motion.div>
 
               {/* Desktop Menu */}

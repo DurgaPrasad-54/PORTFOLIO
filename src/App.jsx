@@ -49,8 +49,11 @@ const Portfolio = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
+      // Use setTimeout to ensure menu closes before scrolling
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
   };
 
@@ -305,7 +308,11 @@ const Portfolio = () => {
                   {['home', 'about', 'skills', 'experience', 'projects', 'education', 'contact'].map((item) => (
                     <button
                       key={item}
-                      onClick={() => scrollToSection(item)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        scrollToSection(item);
+                      }}
                       className={`block w-full text-left px-4 py-2 rounded-lg transition-colors ${
                         activeSection === item
                           ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'

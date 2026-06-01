@@ -724,13 +724,6 @@ const Portfolio = () => {
                       whileHover={{ scale: 1.02 }}
                       className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-xl border border-gray-200 dark:border-gray-700 relative"
                     >
-                      {/* Timeline Dot */}
-                      <div className={`absolute top-6 sm:top-8 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-4 border-white dark:border-gray-900 ${
-                        index % 2 === 0 
-                          ? 'left-1/2 -translate-x-1/2 sm:left-auto sm:-translate-x-1/2 sm:right-full sm:mr-2 md:left-1/2 md:mr-0 md:-translate-x-1/2' 
-                          : 'left-1/2 -translate-x-1/2 sm:left-auto sm:-translate-x-1/2 sm:right-full sm:mr-2 md:left-1/2 md:mr-0 md:-translate-x-1/2'
-                      }`}></div>
-
                       <div className="flex items-start gap-3 sm:gap-4 mb-4">
                         <div className="p-2 sm:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex-shrink-0">
                           <FaBriefcase className="text-lg sm:text-2xl text-blue-600 dark:text-blue-400" />
